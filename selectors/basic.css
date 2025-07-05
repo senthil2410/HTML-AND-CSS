@@ -1,0 +1,38 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;;
+}
+
+body
+{
+    background-color: bisque;
+    height: 100vh;
+    display: flex;
+     align-items: center;
+    justify-content: center;
+}
+
+.container
+{
+    height: 400px;
+    width: 400px;
+    background-color: azure;
+     padding: 10px;
+}
+h1{
+     font-weight: bold;
+     text-align: center;
+     padding: 10px;
+     margin-bottom: 10px;
+}
+
+
+#basic
+{
+    color: darkblue;
+    
+}
+
+

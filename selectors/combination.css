@@ -1,0 +1,15 @@
+div p{
+    color:red;
+}
+
+div >h2{
+    color:blue;
+}
+
+div+h3{
+    color:darkred;
+}
+
+div~h4{
+    color:blueviolet;
+}
