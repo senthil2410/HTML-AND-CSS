@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <tittle>Images in html</tittle>
+</head>
+
+<body>
+        <input type="file" accept="image/*" capture>
+         <input type="file" accept="audio/*" capture>
+         <img srcset="images/hotel.jpeg 480w, https://img.freepik.com/free-photo/beautiful-luxury-outdoor-swimming-pool-hotel-resort_74190-7433.jpg 800w" sizes="(max-width:600px) 480px 800px" src="images/hotel.jpeg" alt="hotel image">
+
+         <img src="/images/hotel.jpeg" usemap="#hotelMap" width="600px" style="display: block;">
+         <map name="hotelMap"><area shape="rect" coords="155 120 270 350"  href="media.html" alt="media"></map>
+
+         <img src="/images/hotel.jpeg" width="500px" height="500px">
+</html>
+</body>
