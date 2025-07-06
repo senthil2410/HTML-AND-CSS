@@ -60,3 +60,18 @@ button
     color: aliceblue;
     cursor: pointer;
 }
+
+@media (hover: hover) {
+  button:hover {
+    background-color: yellow;
+  }
+}
+
+
+@media(max-width:600px)
+{
+    body
+    {
+        background-color: bisque;
+    }
+}

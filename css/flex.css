@@ -1,0 +1,181 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(215, 248, 237);
+    display: flex;
+     min-height: 100vh;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center; 
+    
+}
+
+
+
+
+.container
+{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: aqua;
+    justify-content: space-between;
+    
+}
+    
+  
+.container > div{
+     background-color: aliceblue;
+     width: 100px;
+     padding: 10px;
+     margin: 10px;
+     font-size: medium;
+     
+
+}
+.wrapper2
+{
+    margin-top: 10px;
+}
+
+
+
+
+
+.container2 > div{
+      background-color: rgb(18, 32, 44);
+     width: 100px;
+     padding: 5px;
+     margin: 10px;
+     font-size: large;
+     color: aliceblue;
+
+}
+
+.wrapper3 {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 90%;
+}
+
+
+.container3 {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: aqua;
+
+
+    flex-direction: row-reverse;
+    width: 100%;
+    border: 2px solid black;
+    height: 120px;
+}
+
+.container3 > .box {
+    background-color: rgb(18, 32, 44);
+    padding: 10px;
+    margin: 10px;
+
+    font-size: large;
+    color: aliceblue;
+
+    
+    flex-grow: 1;
+}
+
+
+.container3 > .box:nth-child(1) {
+    flex-grow: 2;
+    background-color: rgb(184, 35, 35); 
+}
+
+.container3 > .box:nth-child(2) {
+    flex-grow: 5;
+    background-color: blanchedalmond; 
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+
+    background-color: aqua;
+    width: 600px;
+    border: 2px solid black;
+    height: 120px ;
+     
+}
+
+.container > .box {
+    background-color: rgb(18, 32, 44);
+    padding: 10px;
+    margin: 0; 
+    border: 1px solid white;
+    font-size: large;
+    color: aliceblue;
+    flex-basis: 200px; 
+    flex-shrink: 1;
+    flex-grow:0;
+}
+
+.container > .box:nth-child(1) {
+    flex-shrink: 5; 
+    background-color: rgb(184, 35, 35);
+}
+
+.container > .box:nth-child(2) {
+    flex-shrink: 10;
+    background-color: blanchedalmond;
+}
+
+
+.container4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 10px; 
+    background-color: #a0e7e5;
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .gridbox {
+    background-color: #084c61;
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+  body {
+    background-color: lightcoral;
+    font-size: 14px;
+  }
+}
+
+@media(prefers-color-scheme: dark)
+{ body{
+    background-color:black;
+    color: azure;
+}
+
+}
+
+@media(prefers-color-scheme: white)
+{ body{
+    background-color:rgb(238, 236, 236);
+    color: rgb(7, 7, 7);
+}
+
+}

@@ -1,0 +1,27 @@
+.box1
+{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: 40px;
+    top: 30px;
+}
+
+.box2
+{
+     width: 400px;
+     height: 300px;
+    position: absolute;
+    left: 140px;
+    top: 130px;
+}
+.box3
+{
+     width: 400px;
+     height: 300px;
+    position: fixed;
+    top: 50px;
+    left: 700px;
+    color:blue;
+}
+
