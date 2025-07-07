@@ -3,28 +3,28 @@ var x=10;
 const y=15 
 
 
-let z=20; 
+const z=20; 
 
-let name="Senthil" ; 
+const  name="Senthil" ; 
 
-let age=23;
+const age=23;
 
-let isLoggedin=true;
+const sLoggedin=true;
 
  
 
-let grade=null; 
+const grade=null; 
 
 
-let balance=1234567890n; 
+const balance=1234567890n; 
 
 
-let uniqueKey=Symbol("id");
+const  uniqueKey=Symbol("id");
 
 
-let person={name:"Alice",age:30}; 
+const person={name:"Alice",age:30}; 
 
-let numbers=[1,2,3,4];
+const numbers=[1,2,3,4];
 
  console.log(typeof "hello"); 
  
