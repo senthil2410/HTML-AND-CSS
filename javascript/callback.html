@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Alarm app</title>
+    </head>
+    <body>
+        <button class="alarm">Alarm</button>
+        <h3 class="result"></h3>
+    </body>
+
+    <script>
+         let result=document.querySelector('.result');
+          document.querySelector('.alarm').addEventListener('click',(()=>
+          {
+            setTimeout(()=>
+        {
+               result.innerHTML="   wake up please"
+        },5000)}));
+    </script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Alarm app</title>
+    </head>
+    <body>
+        <header>
+            <h2 style="text-align: center ; margin: (0,0,0,4px);">Alarm app</h2>
+        </header>
+        <section>
+        <input type="number" id="delay" class="delay" placeholder="Enter the delay time">
+        <h2 class="alert-message"></h2>
+        <button id="setAlarm">Set alarm</button>
+        </section>
+    </body>
+    <script>
+        const alertMessage=document.querySelector('.alert-message');
+        const setAlarm=document.getElementById('setAlarm');
+        const delay=document.querySelector(".delay");
+
+        function alarm(delay)
+        {
+            return(new Promise((resolve, reject) => {
+                if(delay<0)
+               {
+                   reject(new Error("negative delay"));
+                   return
+               }
+               setTimeout(()=>
+              {
+                  resolve("please wake up");
+              },delay)
+            }))
+        }
+
+
+        setAlarm.addEventListener("click",async()=>
+    {
+          try{
+            const message=await alarm(delay.value)
+            alertMessage.innerHTML=message;
+          }
+          catch(err)
+          {
+            
+            alertMessage.innerHTML=`there is any error in you alarm app ${err}`;
+          }
+          }
+    )
+
+    </script>
+</html>

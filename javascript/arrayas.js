@@ -57,5 +57,5 @@ student.set(2,"Bala");
 student.set(3,"suresh");
 student.set(4,"senthil");
 
-console.log(student.get(4));  //ha  delete   clear  size.
+console.log(student.get(4));  
 

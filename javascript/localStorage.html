@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Local Storage</title>
+    </head>
+    <body>
+        <h2 class="storage"></h2>
+    </body>
+
+    <script>
+         const storage=document.querySelector('.storage');
+          localStorage.setItem("Name","Senthil");
+          localStorage.removeItem("Name");
+          localStorage.setItem("Name","Kumar");
+
+          storage.textContent=localStorage.getItem("Name");
+ 
+    </script>
+    
+</html>
+
+
+
+
+
+

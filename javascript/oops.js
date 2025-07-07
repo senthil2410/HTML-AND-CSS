@@ -1,4 +1,68 @@
+const Person=
+{
+    name:["Senthil","Kumar"],
+    age:23,
+    introduce:function()
+    {
+        console.log(`Hi this is ${this.name[0]}`);
+    }
+}
+
+console.log(Person.name);
+
+
+const person1=
+{
+    name:{first:"baby",last:"sudha"},
+    age:49,
+     greet:function()
+    {
+        console.log(`Hi this is ${person1["name"]["last"]}`);
+    }
+}
+
+
+console.log(person1["name"]);
+
+console.log(person1["name"]["last"]);
+
+function employee(name)
+{
+    const obj={};
+    obj.name=name;
+    obj.introduce=function()
+    {
+         console.log(`Hi this is ${this.name}`)
+    }
+    return obj;
+}
+
+const suchind=employee("Suchind");
+suchind.introduce();
+
+
+
+function employeeData(name)
+{
+    
+    this.name=name;
+    this.introduce=function()
+    {
+         console.log(`Hi this is ${this.name}`)
+    }
+}
+
+const kumar=new employeeData("kumar");
+kumar.introduce();
+
+
+
+
 class Student{
+    id;
+    name;
+    dept;
+
     constructor(id,name,dep)
     {
         this.id=id;
@@ -16,7 +80,6 @@ let student1=new Student(1,'Senthil','EI');
 student1.getStudent();
 
 
-// Encapsulation
 
 
 class Account
@@ -44,7 +107,6 @@ console.log(acc.getBalance());
 
 
 
-//Inheritance
 
 class User
 {
@@ -74,10 +136,10 @@ user.login();
 
 const admin=new Admin("Kumar");
 admin.login();
-(admin.logout(user));
+admin.logout(user);
 
 
-//polymorphism
+
 class Domain
 {
     learn()
@@ -87,7 +149,7 @@ class Domain
 }
 
 
-class Java extends domain{
+class Java extends Domain{
     learn()
     {
         console.log("learning java")

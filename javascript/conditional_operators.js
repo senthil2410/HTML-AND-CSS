@@ -20,7 +20,6 @@ console.log(5=='5');
 console.log(5==='5');
 
 
-/* logical operators */
 
 let isLoggedIn=true;
 let isAdmin=true;

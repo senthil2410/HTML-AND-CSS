@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Session Storage</title>
+    </head>
+    <body>
+        <h2 class="storage"></h2>
+    </body>
+
+    <script>
+         const storage=document.querySelector('.storage');
+          sessionStorage.setItem("Name","Senthil");
+          sessionStorage.removeItem("Name");
+          sessionStorage.setItem("Name","Kumar");
+
+          storage.textContent=localStorage.getItem("Name");
+ 
+    </script>
+    
+</html>
+
+
+

@@ -26,7 +26,7 @@ let words=sentence.split(" ");
 
 let back=words.join("-");
 
-// bracket notation
+
 
 const person={
    name:["senthil","kumar"],

@@ -1,33 +1,32 @@
-var x=10;   // function scoped ,hoisting issue
+var x=10;  
 
-const y=15 // class scoped ,immumatble
-
-
-let z=20; // class scoped ,mutable, if you are using this before intilization it will give value undefined unlike var and const
+const y=15 
 
 
-let name="Senthil" ; //String
+let z=20; 
 
-let age=23; // Number
+let name="Senthil" ; 
+
+let age=23;
 
 let isLoggedin=true;
 
  
 
-let grade=null; //Null
+let grade=null; 
 
 
-let balance=1234567890n; //BigInt
+let balance=1234567890n; 
 
 
-let uniqueKey=Symbol("id"); //Symbol
+let uniqueKey=Symbol("id");
 
 
-let person={name:"Alice",age:30}; //Object
+let person={name:"Alice",age:30}; 
 
-let numbers=[1,2,3,4]; //Array
+let numbers=[1,2,3,4];
 
- console.log(typeof "hello");   //typeof operator  
+ console.log(typeof "hello"); 
  
  
  

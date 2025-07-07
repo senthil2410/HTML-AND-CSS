@@ -1,36 +1,12 @@
-// time out
-
-/*
-console.log("login page");
-
-setTimeout(()=>
-{
-   console.log("Welcome to shopify");
-},2000)
-
-console.log("Loading data");
-
-
 
 setInterval(()=>
 {
     const time=new Date().toLocaleDateString();
     console.log(time);
-},1000000);
+},5000);
 
-console.log("alarm going to ring every one hour");
+console.log("alarm going to sneeze every five minutes");
 
-
-
-// chaining promises
-
-fetch("https://fakestoreapi.com")
-.then(res=>res.json())
-.then(data=>console.log(data.tittle,data.description.data.price))
-.catch(err=>console.error(err));;;
-
-
-*/
 
 
 function loginUser(username,password)
@@ -57,7 +33,7 @@ function loginUser(username,password)
     })
 }
 
-loginUser("senthil",1234)
+loginUser("senthil","1234")
   .then(response=>
   {
     console.log(response.message + response.user)
@@ -68,9 +44,6 @@ loginUser("senthil",1234)
     console.error(err.error)
   }
   )
-
-
-  // aysnc await
 
 
 async function handleLogin(params) {
@@ -85,3 +58,5 @@ async function handleLogin(params) {
     }
 
 }
+
+handleLogin();
