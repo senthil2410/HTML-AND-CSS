@@ -26,6 +26,18 @@ let words=sentence.split(" ");
 
 let back=words.join("-");
 
+// bracket notation
+
+const person={
+   name:["senthil","kumar"],
+   age:23
+}
+
+function insertingValue(property)
+{
+      console.log(person[property]);
+}
 
 
+insertingValue("name");
 
