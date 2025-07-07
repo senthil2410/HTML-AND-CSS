@@ -77,4 +77,26 @@ admin.login();
 (admin.logout(user));
 
 
+//polymorphism
+class Domain
+{
+    learn()
+    {
+        console.log("leraning programming")
+    }
+}
 
+
+class Java extends domain{
+    learn()
+    {
+        console.log("learning java")
+    }
+}
+
+
+let s1=new Domain();
+let s2=new Java();
+
+s1.learn();
+s2.learn();

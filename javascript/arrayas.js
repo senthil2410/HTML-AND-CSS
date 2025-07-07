@@ -34,3 +34,28 @@ const USD=rupees.map((dolar)=>
 })
 
 
+
+const rollnumber=[101,102,102,103,103,104,105];
+
+
+const uniquerollnumber=new Set(rollnumber);
+
+console.log(uniquerollnumber);
+
+uniquerollnumber.add(106);
+
+uniquerollnumber.delete(103);
+
+console.log(uniquerollnumber.has(103));
+
+console.log(uniquerollnumber.size);
+
+const student=new Map();
+
+student.set(1,"Arthi");
+student.set(2,"Bala");
+student.set(3,"suresh");
+student.set(4,"senthil");
+
+console.log(student.get(4));  //ha  delete   clear  size.
+
