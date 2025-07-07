@@ -86,5 +86,19 @@ console.log('Hi I\'m Senthil');
 console.log('Hi Im Senthil');
 
 
+const nums = [5, 10, 15];
+console.log(Math.max(...nums));  // spread operator
 
 
+const marks=[45,50,65,70,80];
+
+const s_marks=[...marks,85,90];
+
+console.log(s_marks);
+
+
+const studentAge={senthil:23,kumar:22}
+
+const Age={...studentAge,thangaraj:55};
+
+console.log(Age);
