@@ -110,6 +110,8 @@ console.log(acc.getBalance());
 
 class User
 {
+
+    name;
     constructor(name)
     {
         this.name=name;
